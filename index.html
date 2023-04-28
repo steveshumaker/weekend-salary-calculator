@@ -5,9 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Steve's Subs Salary Calculator</title>
 </head>
 <body>
+    <h1>Salary Calculator</h1>
+    <div id="inputDiv">
+        <h2>Add Employee</h2>
+        <form>
+            <input id="firstName" type="text" name="firstName" placeholder="First Name">
+            <input id="lastName" type="text" name="lastName" placeholder="Last Name">
+            <input id="empID" type="text" name="empID" placeholder="ID">
+            <input id="empTitle" type="text" name="empTitle" placeholder="Title">
+            <input id="empSal" type="text" name="empSal" placeholder="Salary">
+            <input id="submitBtn" type="submit" value="Submit" onclick="getVals(event)">
+        </form>
+    </div>
+
+    <div id="tableDiv">
+        <h2>Employees</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody id="employees">
+                <!-- <tr>
+                    <td>Steve</td>
+                    <td>Shumaker</td>
+                    <td>37208</td>
+                    <td>Business Analyst</td>
+                    <td>$1,000</td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+
+    <div id="totalSalary">
+        <p>Total Salary: $PLACEHOLDER</p>
+    </div>
     <script src="client.js"></script>
 </body>
 </html>
