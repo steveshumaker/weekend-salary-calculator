@@ -27,7 +27,7 @@ function getVals(event) {
     event.preventDefault();
 
     let tableInput = [];
-    let updatedSal = totalSal;
+    // let updatedSal = totalSal;
 
 
     // let tableInput = [];
@@ -68,10 +68,11 @@ function getVals(event) {
 
     let salEl = document.querySelector('#totalSalary');
     let formattedTotal = formatter.format(totalSal);
-    salEl.innerHTML = `<h3>Total Monthly: ${formattedTotal}</h3>`;
+    salEl.innerHTML = `<h3 id="h3Sal">Total Monthly: ${formattedTotal}</h3>`;
 
-
+    formatTotal(totalSal);
 }
+
 
 function deleteRow(event) {
     event.target.parentElement.parentElement.remove();
@@ -90,3 +91,11 @@ function removeComma(value) {
     return value;
 }
 
+function formatTotal(val) {
+    if (val > 20000) {
+        let el = document.getElementById('h3Sal');
+        console.log(el);
+        el.style.backgroundColor = 'red';
+        el.style.marginLeft = '75%';
+    }
+}
