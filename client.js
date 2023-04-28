@@ -78,12 +78,15 @@ function deleteRow(event) {
 }
 
 function removeComma(value) {
-    for (let i = 0; i < value.length; i++) {
-        if (value[i] === ",") {
-            newVal = value.replace(value[i], '');
-        }
-    }
+    if (value.indexOf(',') > 0) {
+        for (let i = 0; i < value.length + 1; i++) {
+            if (value[i] === ",") {
+                newVal = value.replace(value[i], '');
+            } // end if
+        } // end for 
+        return newVal;
+    } // end if
 
-    return newVal;
+    return value;
 }
 

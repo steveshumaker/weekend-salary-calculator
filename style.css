@@ -35,6 +35,12 @@ table, th, td{
     border-collapse: collapse;
 }
 
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+
+/* end of table div */
 #endOfTable {
     border: 1px solid;
     height: 2rem;
