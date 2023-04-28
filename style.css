@@ -1,3 +1,5 @@
+/* general formats */
+
 body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -8,9 +10,19 @@ h1 {
     text-align: center;
 }
 
+/* form */
+#empId {
+    background-color: red;
+    border-bottom: 10px dotted black;
+}
+
+/* .hovertext {
+    
+} */
+
 /* table */
 table {
-    width: 75%;
+    width: 75.15%;
 }
 
 th, td {
@@ -24,7 +36,7 @@ table, th, td{
 }
 
 #endOfTable {
-    border: .2px solid;
+    border: 1px solid;
     height: 2rem;
     background-color: lightgray;
     width: 75%;

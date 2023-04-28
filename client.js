@@ -4,8 +4,8 @@
 ** 2 - build boilerplates and link all files [x]
 ** 3 - create basic html elements [x]
 ** 4 - add form handling in js [x]
-** 5 - style html elements []
-** 6 - tbd []
+** 5 - style html elements [x]
+** 6 - add data validation in the form []
 ** x - add extra functionality/styling []
 */
 
@@ -38,12 +38,14 @@ function getVals(event) {
     let titleVal = document.querySelector('#empTitle').value;
     let salVal = document.querySelector('#empSal').value;
 
+    let newVal = removeComma(salVal)
+
     tableInput.push({
         firstName: fnVal, 
         lastName: lnVal, 
         id: idVal, 
         title: titleVal, 
-        salary: salVal
+        salary: newVal
     });
 
     let tableEl = document.querySelector('#employees');
@@ -74,3 +76,14 @@ function getVals(event) {
 function deleteRow(event) {
     event.target.parentElement.parentElement.remove();
 }
+
+function removeComma(value) {
+    for (let i = 0; i < value.length; i++) {
+        if (value[i] === ",") {
+            newVal = value.replace(value[i], '');
+        }
+    }
+
+    return newVal;
+}
+
