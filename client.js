@@ -2,9 +2,9 @@
 ** Plan **
 ** 1 - create files [x]
 ** 2 - build boilerplates and link all files [x]
-** 3 - create basic html elements []
-** 4 - style html elements []
-** 5 - add form handling in js []
+** 3 - create basic html elements [x]
+** 4 - add form handling in js [x]
+** 5 - style html elements []
 ** 6 - tbd []
 ** x - add extra functionality/styling []
 */
