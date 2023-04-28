@@ -17,6 +17,11 @@
 
 let totalSal = 0;
 
+let formatter = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+});
+
 function getVals(event) {
 
     event.preventDefault();
@@ -49,17 +54,23 @@ function getVals(event) {
             <td>${i.lastName}</td>
             <td>${i.id}</td>
             <td>${i.title}</td>
-            <td>${i.salary}</td>
+            <td>${formatter.format(i.salary)}</td>
+            <td><button onclick="deleteRow(event)">Delete</button></td>
         </tr>`
         
         totalSal += Number(i.salary);
 
     }
 
+
+
     let salEl = document.querySelector('#totalSalary');
-    salEl.innerHTML = `<p>Total Salary: ${totalSal}</p>`;
+    let formattedTotal = formatter.format(totalSal);
+    salEl.innerHTML = `<h3>Total Monthly: ${formattedTotal}</h3>`;
 
 
 }
 
-
+function deleteRow(event) {
+    event.target.parentElement.parentElement.remove();
+}

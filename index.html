@@ -16,7 +16,7 @@
             <input id="lastName" type="text" name="lastName" placeholder="Last Name">
             <input id="empID" type="text" name="empID" placeholder="ID">
             <input id="empTitle" type="text" name="empTitle" placeholder="Title">
-            <input id="empSal" type="text" name="empSal" placeholder="Salary">
+            <input id="empSal" type="text" name="empSal" placeholder="Annual Salary">
             <input id="submitBtn" type="submit" value="Submit" onclick="getVals(event)">
         </form>
     </div>
@@ -30,23 +30,19 @@
                     <th>Last Name</th>
                     <th>ID</th>
                     <th>Title</th>
-                    <th>Salary</th>
+                    <th>Annual Salary</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody id="employees">
-                <!-- <tr>
-                    <td>Steve</td>
-                    <td>Shumaker</td>
-                    <td>37208</td>
-                    <td>Business Analyst</td>
-                    <td>$1,000</td>
-                </tr> -->
+
             </tbody>
         </table>
+        <p id="endOfTable"></p>
     </div>
 
     <div id="totalSalary">
-        <p>Total Salary: $PLACEHOLDER</p>
+        <h3>Total Monthly: $0</h3>
     </div>
     <script src="client.js"></script>
 </body>
