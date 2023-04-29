@@ -5,7 +5,7 @@
 ** 3 - create basic html elements [x]
 ** 4 - add form handling in js [x]
 ** 5 - style html elements [x]
-** 6 - add data validation in the form []
+** 6 - add data validation in the form [xish]
 ** x - add extra functionality/styling []
 ** TODO **
 ** - Remove row's salary from total when deleting a row
@@ -81,7 +81,7 @@ function getVals(event) {
         
         count++;
         // increment the total salary by the employee's salary
-        totalSal += Number(i.salary);
+        totalSal += Number(i.salary) / 12;
 
     }
 
