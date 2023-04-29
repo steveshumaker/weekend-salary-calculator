@@ -8,42 +8,47 @@
     <title>Steve's Subs Salary Calculator</title>
 </head>
 <body>
-    <h1>Salary Calculator</h1>
-    <div id="inputDiv">
-        <h2>Add Employee</h2>
-        <form>
-            <input class="inputField" id="firstName" type="text" name="firstName" placeholder="First Name">
-            <input class="inputField" id="lastName" type="text" name="lastName" placeholder="Last Name">
-            <input class="inputField" id="empID" type="text" name="empID" placeholder="ID - 6 digits">
-            <input class="inputField" id="empTitle" type="text" name="empTitle" placeholder="Title">
-            <input class="inputField" id="empSal" type="text" name="empSal" placeholder="Annual Salary">
-            <input class="inputField" id="submitBtn" type="submit" value="Submit" onclick="getVals(event)">
-        </form>
+    <div id="header">
+        <h1>Salary Calculator</h1>
     </div>
 
-    <div id="tableDiv">
-        <h2>Employees</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>ID</th>
-                    <th>Title</th>
-                    <th>Annual Salary</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody id="employees">
+    <div id="content">
+        <div id="inputDiv">
+            <h2>Add Employee</h2>
+            <form id="myForm">
+                <input class="inputField" id="firstName" type="text" name="firstName" placeholder="First Name">
+                <input class="inputField" id="lastName" type="text" name="lastName" placeholder="Last Name">
+                <input class="inputField" id="empID" type="text" name="empID" placeholder="ID - 6 digits">
+                <input class="inputField" id="empTitle" type="text" name="empTitle" placeholder="Title">
+                <input class="inputField" id="empSal" type="text" name="empSal" placeholder="Annual Salary">
+                <input id="submitBtn" type="submit" value="Submit" onclick="getVals(event)">
+            </form>
+        </div>
 
-            </tbody>
-        </table>
-        <p id="endOfTable"></p>
-    </div>
+        <div id="tableDiv">
+            <h2>Employees</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Annual Salary</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="employees">
 
-    <div id="totalSalary">
-        <h3>Total Monthly: $0</h3>
+                </tbody>
+            </table>
+            <p id="endOfTable"></p>
+        </div>
+
+        <div id="totalSalary">
+            <h3>Total Monthly: $0</h3>
+        </div>
+        <script src="client.js"></script>
     </div>
-    <script src="client.js"></script>
 </body>
 </html>
