@@ -16,7 +16,14 @@ This salary calc allows a very beginner level business to implement a monthly sa
 
 ## Screen Shot
 
-To be added
+<img width="1094" alt="Screenshot 2023-05-05 at 8 46 29 PM" src="https://user-images.githubusercontent.com/88906397/236592108-717cab51-1529-44ea-bfbd-750fac0f59c5.png">
+
+<img width="1093" alt="Screenshot 2023-05-05 at 8 47 43 PM" src="https://user-images.githubusercontent.com/88906397/236592115-9e71a0d2-e165-4a5f-ac67-917dbce5ce51.png">
+
+<img width="1094" alt="Screenshot 2023-05-05 at 8 47 59 PM" src="https://user-images.githubusercontent.com/88906397/236592119-c2e846ac-4c37-45b7-9bd7-4aeb1eb44abd.png">
+
+<img width="1096" alt="Screenshot 2023-05-05 at 8 49 04 PM" src="https://user-images.githubusercontent.com/88906397/236592126-6523863d-4cd9-4304-83c7-3bd7d2154bd0.png">
+
 
 ## Usage
 
